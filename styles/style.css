@@ -1,0 +1,62 @@
+body, html{
+	margin: 0;
+}
+
+.winstyle{
+	background-color: #666;
+	background-image: url(img/backg.png);
+	background-repeat: no-repeat;
+	border-spacing: 4px; 
+	padding: 0px;
+	border:6px solid #666;
+	outline: 2px solid #666;
+	outline-offset: -8px;
+	background-position: 5px 5px;
+	/*background-size: */
+}
+
+.winstyle tr{
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-spacing:0px;
+}
+
+.winstyle td{
+	outline: 2px solid #666;
+	outline-offset: 0px;
+	position: relative;
+	padding: 0;
+	border: none;
+	border: 2px solid rgba(0,0,0,0);
+	width: 42px;
+	height: 36px;
+}
+
+.winstyle td div{
+	position: relative;
+	user-select: none;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	z-index: 53;
+}
+
+.winstyle td:before{
+	top: 0;
+	content: "";
+	position: absolute;
+	display:block;
+	background: #666;
+	width: 42px;
+	height: 36px;
+}
+
+.winstyle td:hover:before{
+	background: rgba(102,102,102,0.8);
+}
+
+.winstyle td:hover{
+	border-color: #a4a4a4
+}
